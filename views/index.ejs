@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-on-1 Video Call</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="videos">
+        <video class="video-player" id="localVideo" autoplay muted playsinline></video>
+        <video class="video-player" id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div id="controls">
+        <div class="control-container" id="cameraButton">
+            <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.525 2.149C20.365 2.05 20.183 2 20 2C19.847 2 19.694 2.035 19.553 2.105L17 3.382V3C17 1.346 15.654 0 14 0H3C1.346 0 0 1.346 0 3V11C0 12.654 1.346 14 3 14H14C15.654 14 17 12.654 17 11V10.618L19.553 11.894C19.694 11.965 19.847 12 20 12C20.183 12 20.365 11.95 20.525 11.851C20.82 11.668 21 11.347 21 11V3C21 2.653 20.82 2.332 20.525 2.149ZM5 8.5C4.171 8.5 3.5 7.829 3.5 7C3.5 6.171 4.171 5.5 5 5.5C5.829 5.5 6.5 6.171 6.5 7C6.5 7.829 5.829 8.5 5 8.5Z"
+                    fill="white" />
+            </svg>
+        </div>
+
+        <div class="control-container" id="micButton">
+            <svg width="20" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 12.5C8.7 12.5 10 11.2 10 9.5V3.5C10 1.8 8.7 0.5 7 0.5C5.3 0.5 4 1.8 4 3.5V9.5C4 11.2 5.3 12.5 7 12.5ZM12.3 9.5C12.3 12.5 9.8 14.6 7 14.6C4.2 14.6 1.7 12.5 1.7 9.5H0C0 12.9 2.7 15.7 6 16.2V19.5H8V16.2C11.3 15.7 14 12.9 14 9.5H12.3Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
